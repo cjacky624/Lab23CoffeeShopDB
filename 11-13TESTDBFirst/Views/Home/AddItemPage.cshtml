@@ -1,0 +1,14 @@
+﻿
+
+<h2>AddItem</h2>
+<h4>@ViewBag.AddedItem</h4>
+
+<form action= "/Home/AddItem" method="post">
+    <input type="text" name="Name" placeholder="Item Name" />
+    <input type="text" name="Description" placeholder="Describe the item" />
+    <input type="number" name="Quantity" />
+    <input type="text" name="Price" placeholder="0.00" pattern="^\d+.\d\d$"/>
+    <input type="submit" value="Submit" />
+                                                                @*pattern has to be regex*@
+</form>
+
